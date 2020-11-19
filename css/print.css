@@ -1,0 +1,165 @@
+/********Print Preview*******/
+
+
+/****************************/
+
+#print-area {
+    float: left;
+}
+
+@media print {
+    /*remove url from displaying*/
+    a[href]:after {
+        content: none !important;
+    }
+}
+
+
+/*card region*/
+
+@media (min-width: 768px) {
+    #generate_card_form #generate_card {
+        margin-top: 25px;
+    }
+    #search_student_form #search_student {
+        /*margin-top:25px;*/
+    }
+    #generate_card_form #generate_card .display-notice {
+        width: 100%;
+        float: left;
+    }
+    #search_card_form #search_card {
+        margin-top: 25px;
+    }
+}
+
+.cards-cover {
+    max-width: 800px;
+}
+
+.card-body {
+    min-width: 400px;
+    border: #CBCBCB solid 1px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-body .school-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #003C8F;
+}
+
+.card-body .address {
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.card-body .phone-number {
+    font-size: .8em;
+    font-weight: 400;
+    padding-left: 1px;
+}
+
+.card-body .website {
+    font-size: .8em;
+    font-weight: 400;
+    border-right: #ADADAD solid 1px;
+    padding-right: 1px;
+}
+
+.card-body .instructions {
+    border-left: #346380 solid 3px;
+    font-size: .8em;
+    padding: 3px 7px;
+}
+
+.card-body .instructions div:nth-child(1) {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.card-body .card-pin {
+    font-weight: 700;
+    text-align: right;
+}
+
+.card-body .card-serial-number {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+}
+
+.card-body .produced-by {
+    color: #F8854A;
+    font-size: .8em;
+}
+
+
+/***********Subject results section************/
+
+.view-student-result-body {
+    width: 920px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+.vertical-text {
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    display: block;
+    height: 84px;
+    font-size: .9em;
+    padding: 1px;
+    white-space: nowrap;
+}
+
+.vertical-text u {
+    text-decoration: underline;
+}
+
+.bordered,
+.n-bordered,
+.n-side-bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/*.n-bordered {
+    border: none;
+}*/
+
+.bordered td,
+.n-bordered td {
+    border: 1px solid black;
+}
+
+.n-bordered tr:first-child td {
+    border-top: none;
+}
+
+.n-bordered tr:last-child td {
+    border-bottom: none;
+}
+
+.n-bordered tr td:first-child {
+    border-left: none;
+}
+
+.n-bordered tr td:last-child {
+    border-right: none;
+}
+
+.broken-bottom-border {
+    border-bottom: #000000 dotted 1px;
+}
